@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container styles */
+.container {
+  width: 80%;
+  margin: 20px auto;
+}
+
+/* Heading styles */
+h2 {
+  text-align: center;
+}
+
+/* List styles */
+ul {
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+/* List item styles */
+li {
+  /* center bullet  */
+  display: flex;
+  justify-items: center;
+  align-items: center;
+
+  padding: 10px;
+  background-color: #f0f0f0;
+  margin-bottom: 5px;
+}
+li:nth-child(odd) {
+  background-color: #494848;
+}
+
+/* Hover */
+li:hover {
+  background-color: #e6e6e6;
+
+  /* Extra hover */
+}
+li:nth-of-type(2n):hover {
+  background-color: black;
+}
+
+/* first letter  */
+li::first-letter {
+  font-size: 150%;
+}
+
+/* Bullet */
+li::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  margin-right: 5px;
+  display: inline-block;
+  background-color: black;
+}
+/* Click me */
+li::after {
+  content: " click me";
+  color: blue;
+  margin-left: 5px;
+}
+
+/* Separate the list from the heading by adding a margin-top of 20 pixels to the <ul> element.
+Style every other list item with a slightly darker background color. Use the :nth-child(odd) pseudo-class for this.
+Add a hover effect to list items. When hovered over, change the background color to #e6e6e6. Use the :hover pseudo-class for this.
+Increase the font size of the first letter of each list item to 150%. Utilize the ::first-letter pseudo-element for this.
+Add a bullet (•) before each list item. Use the ::before pseudo-element for this.
+Add " (click me)" after each list item. Use the ::after pseudo-element for this. */
